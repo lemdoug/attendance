@@ -64,8 +64,8 @@
         <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
 
-        <button class="btn btn-warning" type="submit" name="submit">Save Changes</button>
-        <a href="viewrecords.php" class="btn btn-primary">Back</a>
+    <a class="btn btn-warning" type="submit" name="submit">Save Changes</button>
+    <a href="viewrecords.php" class="btn btn-primary">Back to List</a>
     
 
 </form>
