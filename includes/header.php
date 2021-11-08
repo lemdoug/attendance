@@ -20,7 +20,7 @@
   </head>
   <body>
 
-    <div class="container">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php">IT Conference</a>
@@ -52,5 +52,7 @@
         </div>
     </div>
   </nav>
+  <div class="container">
+    
 <br/>
 <br/>

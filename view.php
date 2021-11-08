@@ -16,10 +16,13 @@
 
 
 ?>
-
-    <div class="card-body text-left">
+    
+    
+    <div class="card-body text-left mb-5">
             <h3 class="card-title text-center" >Attendee details</h3>
         
+            <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($result['avatar_path']) ? "uploads/default.png" : $result['avatar_path']?>"/>
+
             <h4 class="card-text"> <?php echo $result['firstname'] . ' ' . $result['lastname']; ?> </h4>
             <h5 class="card-text"> <?php echo $result['name'] ?> </h5>
             <br/>

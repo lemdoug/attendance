@@ -8,7 +8,7 @@
 
 ?>
 
-    <table class="table table-dark table-striped">
+    <table class="table table-dark table-striped mb-5">
         <tr>
             <th scope="col">#</th>
             <th scope="col">First Name</th>
@@ -37,11 +37,5 @@
             </tr>
         <?php }?>
     </table>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 <?php require_once 'includes/footer.php'; ?>   

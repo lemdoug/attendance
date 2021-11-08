@@ -58,9 +58,11 @@
     <div class="card-footer text-muted">
     </div> -->
     
-    <div class="card-body text-left">
+    <div class="card-body text-left mb-5">
         <h3 class="card-title text-center" >Registration details</h3>
        
+        <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo $destination?>"/>
+        
         <h4 class="card-text"> <?php echo $_POST['firstname'] . ' ' . $_POST['lastname']; ?> </h4>
         <h5 class="card-text"> <?php echo $specialtyName['name']; ?> </h5>
         <br/>
@@ -73,17 +75,5 @@
 </div>
 
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 <?php require_once 'includes/footer.php'; ?>   
