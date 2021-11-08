@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/site.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-
+    <link rel="stylesheet" href="/resources/demos/style.css">
 
     <title>Attendance  - <?php echo $title ?></title>
   </head>
