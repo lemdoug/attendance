@@ -9,7 +9,7 @@
     //Remote Database Connection
     $host = 'remotemysql.com';
     $db = 'pX2duJX6zr';
-    $user = 'pX2duJX6zr';
+    $dbuser = 'pX2duJX6zr';
     $pass = 'nvzl8bKGmi';
     $charset = 'utf8mb4';
 
