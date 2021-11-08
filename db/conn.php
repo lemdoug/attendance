@@ -1,22 +1,22 @@
 <?php
     // Development Connection
-    // $host = 'localhost';
-    // $db = 'attendance_db';
-    // $dbuser = 'root';
-    // $pass = '';
-    // $charset = 'utf8mb4';
+    $host = 'localhost';
+    $db = 'attendance_db';
+    $dbuser = 'root';
+    $pass = '';
+    $charset = 'utf8mb4';
 
     //Remote Database Connection
-    $host = 'remotemysql.com';
-    $db = 'pX2duJX6zr';
-    $user = 'pX2duJX6zr';
-    $pass = 'nvzl8bKGmi';
-    $charset = 'utf8mb4';
+    // $host = 'remotemysql.com';
+    // $db = 'pX2duJX6zr';
+    // $user = 'pX2duJX6zr';
+    // $pass = 'nvzl8bKGmi';
+    // $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
     try{
-        $pdo = new PDO($dsn, $user, $pass);
+        $pdo = new PDO($dsn, $dbuser, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
        // echo 'Hello DB';

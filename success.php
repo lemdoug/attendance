@@ -8,6 +8,7 @@
     
 
     if(isset($_POST['submit'])){
+        //extracts values from the $_POST array 
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $dob = $_POST['dob'];
@@ -15,7 +16,14 @@
         $contact = $_POST['phone'];
         $specialty = $_POST['specialty'];
 
-        $isSuccess = $crud->insertAttendees($firstname,$lastname,$dob,$email,$contact,$specialty);
+        $orig_file = $_FILES["pic"]["tmp_name"];
+        $target_dir = 'uploads/';
+        $ext = pathinfo($_FILES["pic"]["name"], PATHINFO_EXTENSION);
+        $destination = "$target_dir$contact.$ext";
+        move_uploaded_file($orig_file,$destination);
+      
+        //call funstion to insert and tracks if it was successful or not
+        $isSuccess = $crud->insertAttendees($firstname,$lastname,$dob,$email,$contact,$specialty,$destination);
         $specialtyName = $crud->getSpecialtybyID($specialty);
 
         if($isSuccess){

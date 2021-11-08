@@ -18,7 +18,7 @@
 
     <h1 class="text-center">Registration for IT Conference </h1>
 
-<form method ="post" action="success.php">
+<form method ="post" action="success.php" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="firstname" class="form-label">First Name</label>
         <input required type="text"  class="form-control" id="firstname" name="firstname"/>
@@ -54,6 +54,10 @@
         <label for="phone" class="form-label">Contact number</label>
         <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
         <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="file" accept="image/*" class="form-control" name="pic">
     </div>
 
     <div class="d-grid gap-2">
